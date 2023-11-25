@@ -1,0 +1,19 @@
+{
+    "1": [
+        "-ask2checkOut(guestName: String, roomId: int): void",
+        "+checkOut(roomId: int): void",
+        "-workerName: String",
+        "Dispatcher",
+        "checkOut",
+        "isCleanOperation()"
+    ],
+    "2": [
+        "DIS_REC_CHECKIN_FAILED",
+        "replyCheckOut(request);",
+        "arrangeClean4CheckOut(request);",
+        "arrangeCleanOnly(Request request)",
+        "RoomState.CLEANING",
+        "RequestTag.REC_DIS_CHECKOUT.equals(request.getRequestTag())"
+    ],
+    "3": "高内聚低耦合，简单地说就是要尽可能地让各个类之间独立出来，各司其职，每个类之间只需要进行简单的通信即可。这样实现的代码不仅可读性很强，而且因为每个类之间的关系简洁明了，在debug时也非常方便。以本次实验为例，整体架构以Controller为核心，而Controller又只控制每种Worker的RequestList，由worker自己从requestList中取出指令来执行，使得每个类之间的关系非常简洁明了，很好地实现了高内聚低耦合的理念。"
+}

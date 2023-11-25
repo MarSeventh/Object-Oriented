@@ -1,0 +1,25 @@
+{
+    "1": [
+        "Bottle",
+        "beUsed",
+        "泛化",
+        "Equipment"
+    ],
+    "2": "构造",
+    "3": ["Adventurer", "getKnapsack", "entry"],
+    "4": ["CommodityManager", "Knapsack", "isFull"],
+    "5": ["CommodityManager", "Knapsack", "依赖"],
+    "6": "addEquipment",
+    "7": [
+        "10",
+        "canAdd==0&&trying<=10",
+        "canAdd==0&&trying>9",
+        "trying to add",
+        "trying to add"
+    ],
+    "8": [
+        "泛化",
+        "equipmentList",
+        "Vector<Commodity>"
+    ]
+}
